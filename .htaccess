@@ -9,9 +9,6 @@ ErrorDocument 404 /404.html
   RewriteRule ^nova-home/?$ / [R=301,L]
   RewriteRule ^landing-1/?$ / [R=410,L]
 
-  # Catálogo antigo aberto direto pelo menu -> vira isca de lead
-  RewriteRule ^catalogo/?$ /#catalogo [R=301,L]
-
   # Autores e categorias do WordPress
   RewriteRule ^author/ / [R=301,L]
   RewriteRule ^category/ /blog/ [R=301,L]
@@ -30,7 +27,7 @@ ErrorDocument 404 /404.html
   RewriteRule ^feed/?$ /blog/ [R=301,L]
 
   # PDFs publicados no WordPress
-  RewriteRule ^wp-content/uploads/2025/11/MC-Catalogo-2026-web\.pdf$ /#catalogo [R=301,L]
+  RewriteRule ^wp-content/uploads/2025/11/MC-Catalogo-2026-web\.pdf$ /catalogo/ [R=301,L]
   RewriteRule ^wp-content/uploads/2025/12/DEX-CERTIFICADO-MC-COMERCIO\.pdf$ /assets/docs/DEX-CERTIFICADO-MC-COMERCIO.pdf [R=301,L]
   RewriteRule ^wp-content/uploads/2025/11/DEX-CERTIFICADO-MC-COMERCIO\.pdf$ /assets/docs/DEX-CERTIFICADO-MC-COMERCIO.pdf [R=301,L]
   RewriteRule ^wp-content/uploads/2025/11/Politica-da-Qualidade-e-Objetivos-MC-2024\.pdf$ /assets/docs/Politica-da-Qualidade-e-Objetivos-MC-2024.pdf [R=301,L]

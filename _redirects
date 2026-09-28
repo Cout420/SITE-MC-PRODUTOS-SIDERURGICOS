@@ -5,9 +5,6 @@
 /nova-home/            /                                    301
 /landing-1/             /                                    301
 
-# Catálogo antigo aberto direto pelo menu -> vira isca de lead
-/catalogo/              /#catalogo                           301
-
 # Autores e categorias do WordPress
 /author/*               /                                    301
 /category/*              /blog/                               301
@@ -26,7 +23,7 @@
 /feed/                   /blog/                               301
 
 # PDFs publicados no WordPress
-/wp-content/uploads/2025/11/MC-Catalogo-2026-web.pdf                          /#catalogo                                              301
+/wp-content/uploads/2025/11/MC-Catalogo-2026-web.pdf                          /catalogo/                                              301
 /wp-content/uploads/2025/12/DEX-CERTIFICADO-MC-COMERCIO.pdf                   /assets/docs/DEX-CERTIFICADO-MC-COMERCIO.pdf            301
 /wp-content/uploads/2025/11/DEX-CERTIFICADO-MC-COMERCIO.pdf                   /assets/docs/DEX-CERTIFICADO-MC-COMERCIO.pdf            301
 /wp-content/uploads/2025/11/Politica-da-Qualidade-e-Objetivos-MC-2024.pdf     /assets/docs/Politica-da-Qualidade-e-Objetivos-MC-2024.pdf  301
