@@ -1,0 +1,4 @@
+backup-site-antigo/
+node_modules/
+.DS_Store
+*.log
