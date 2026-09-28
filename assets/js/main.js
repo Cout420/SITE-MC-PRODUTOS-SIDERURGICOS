@@ -251,14 +251,133 @@
     var title = document.title.split("|")[0].trim();
     return "Olá, MC Produtos! Vim pelo site (" + title + ") e gostaria de um orçamento.";
   }
+  /* ==========================================================================
+     Captura estratégica (injetada em todas as páginas)
+     1. Pré-cadastro antes do WhatsApp → toda conversa vira lead no RD
+     2. Catálogo na intenção de saída (desktop)
+     3. Convite deslizante ao ler 55% da página
+     ========================================================================== */
+  var isFunnelPage = /^\/(orcamento|contato|obrigado)\//.test(location.pathname);
+  var hasLead = function () { return !!store.get("mc_lead", null); };
+  var PRODUCTS = ["Tubos de aço carbono", "Conexões e flanges", "Tubos PEAD", "Barras e perfis", "Eletrodutos galvanizados", "Outros / lista de materiais"];
+  function productOptions() {
+    return '<option value="">Selecione</option>' + PRODUCTS.map(function (p) { return "<option>" + p + "</option>"; }).join("");
+  }
+  var CONSENT_HTML = '<label class="consent"><input type="checkbox" name="consent" required> <span>Concordo em ser contatado pela MC, conforme a <a href="/politica-de-privacidade/">Política de Privacidade</a>.</span></label><div class="hp" aria-hidden="true"><label>Não preencha <input name="website" tabindex="-1" autocomplete="off"></label></div><div class="form__status" role="status" aria-live="polite"></div>';
+  function field(id, label, input) {
+    return '<div class="field"><label for="' + id + '">' + label + "</label>" + input + '<span class="field__error" aria-live="polite"></span></div>';
+  }
+  function buildModal(id, inner) {
+    var m = document.createElement("div");
+    m.className = "modal"; m.id = id; m.hidden = true;
+    m.setAttribute("role", "dialog"); m.setAttribute("aria-modal", "true"); m.setAttribute("aria-labelledby", id + "-title");
+    m.innerHTML = '<div class="modal__backdrop" data-close-modal></div><div class="modal__box"><button class="icon-btn modal__close" type="button" data-close-modal aria-label="Fechar"><svg class="icon" aria-hidden="true"><use href="/assets/img/icons.svg#i-close"></use></svg></button>' + inner + "</div>";
+    document.body.appendChild(m);
+    return m;
+  }
+  var waModal = buildModal("wa-gate",
+    '<div class="modal__head modal__head--whats"><svg class="icon" aria-hidden="true"><use href="/assets/img/icons.svg#i-whats"></use></svg><div><h2 id="wa-gate-title">Falar com um especialista</h2><p>Resposta em horário comercial · seg. a sex., 8h às 18h</p></div></div>' +
+    '<form class="form" data-lead-form data-kind="whatsapp" data-conversion="whatsapp-site" novalidate>' +
+    '<div class="form-row form-row--2">' + field("wg-nome", "Seu nome", '<input id="wg-nome" name="nome" autocomplete="name" required>') +
+    field("wg-whats", "WhatsApp", '<input id="wg-whats" name="whatsapp" type="tel" inputmode="tel" data-mask="phone" autocomplete="tel" placeholder="(11) 90000-0000" required>') + "</div>" +
+    '<div class="form-row form-row--2">' + field("wg-email", "E-mail", '<input id="wg-email" name="email" type="email" autocomplete="email" required>') +
+    field("wg-produto", "Produto de interesse", '<select id="wg-produto" name="produto" required>' + productOptions() + "</select>") + "</div>" + CONSENT_HTML +
+    '<button class="btn btn--whats btn--block" type="submit"><svg class="icon" aria-hidden="true"><use href="/assets/img/icons.svg#i-whats"></use></svg> Abrir conversa no WhatsApp</button>' +
+    '<button class="modal__skip" type="button" data-wa-skip>Prefiro ir direto para o WhatsApp</button></form>');
+  var catModal = buildModal("cat-offer",
+    '<div class="modal__split"><div class="modal__art" aria-hidden="true"><img src="/assets/img/produtos/tubos-640.webp" alt="" loading="lazy" onerror="this.remove()"><span>Catálogo<br><b>2026</b></span></div><div>' +
+    '<span class="eyebrow">Antes de sair</span><h2 id="cat-offer-title">Leve o Catálogo 2026 da MC</h2><p class="muted">27 páginas com todas as linhas, normas e itens para cotar mais rápido.</p>' +
+    '<form class="form" data-lead-form data-kind="catalog" data-conversion="catalogo-2026-saida" novalidate>' +
+    field("co-nome", "Nome", '<input id="co-nome" name="nome" autocomplete="name" required>') +
+    field("co-email", "E-mail corporativo", '<input id="co-email" name="email" type="email" autocomplete="email" required>') +
+    field("co-empresa", "Empresa", '<input id="co-empresa" name="empresa" autocomplete="organization" required>') + CONSENT_HTML +
+    '<button class="btn btn--accent btn--block" type="submit"><svg class="icon" aria-hidden="true"><use href="/assets/img/icons.svg#i-download"></use></svg> Receber o catálogo</button></form></div></div>');
+
+  var lastModalFocus, pendingWa;
+  function openModal(m) {
+    lastModalFocus = document.activeElement;
+    m.hidden = false;
+    requestAnimationFrame(function () { m.classList.add("is-open"); });
+    document.body.classList.add("menu-open");
+    var f = $("input:not([type=hidden]), select", m); if (f) setTimeout(function () { f.focus(); }, 60);
+  }
+  function closeModal(m) {
+    if (!m || m.hidden) return;
+    m.classList.remove("is-open");
+    document.body.classList.remove("menu-open");
+    setTimeout(function () { m.hidden = true; }, 300);
+    if (lastModalFocus) lastModalFocus.focus();
+  }
+  [waModal, catModal].forEach(function (m) {
+    $$("[data-close-modal]", m).forEach(function (b) { b.addEventListener("click", function () { closeModal(m); }); });
+  });
+  document.addEventListener("keydown", function (e) { if (e.key === "Escape") { closeModal(waModal); closeModal(catModal); } });
+  $("[data-wa-skip]", waModal).addEventListener("click", function () {
+    session.set("mc_wa_skip", 1);
+    track("whatsapp_click", { link_location: "pre-cadastro-pulado" });
+    window.open(pendingWa || waLink(defaultWaText()), "_blank", "noopener");
+    closeModal(waModal);
+  });
+
   $$("[data-whatsapp]").forEach(function (a) {
     var custom = a.getAttribute("data-whatsapp");
     a.setAttribute("href", waLink(custom || defaultWaText()));
     a.setAttribute("target", "_blank");
     a.setAttribute("rel", "noopener");
-    a.addEventListener("click", function () {
+    a.addEventListener("click", function (e) {
+      // Primeiro contato da sessão passa pelo pré-cadastro (com opção de pular)
+      if (!hasLead() && !session.get("mc_wa_skip") && a.getAttribute("data-gate") !== "off") {
+        e.preventDefault();
+        pendingWa = a.href;
+        var sel = $("#wg-produto");
+        var hint = (custom || document.title).toLowerCase();
+        PRODUCTS.forEach(function (p) { if (hint.indexOf(p.split(" ")[0].toLowerCase()) > -1 && hint.indexOf(p.split(" ").pop().toLowerCase()) > -1) sel.value = p; });
+        openModal(waModal);
+        track("whatsapp_gate_open", { link_location: a.getAttribute("data-loc") || "site" });
+        return;
+      }
       track("whatsapp_click", { link_location: a.getAttribute("data-loc") || "site" });
     });
+  });
+
+  // Intenção de saída (desktop): oferece o catálogo, no máximo 1 vez a cada 7 dias
+  function offerCatalog(trigger) {
+    if (hasLead() || isFunnelPage) return;
+    var last = store.get("mc_cat_offer", 0);
+    if (Date.now() - last < 7 * 864e5) return;
+    store.set("mc_cat_offer", Date.now());
+    openModal(catModal);
+    track("catalog_offer_open", { trigger: trigger });
+  }
+  if (finePointer) {
+    setTimeout(function () {
+      document.addEventListener("mouseout", function (e) {
+        if (!e.relatedTarget && e.clientY < 8) offerCatalog("saida");
+      });
+    }, 12000);
+  }
+
+  // Convite deslizante (todas as telas) ao ler 55% da página
+  if (!isFunnelPage) {
+    var nudge = document.createElement("aside");
+    nudge.className = "nudge";
+    nudge.setAttribute("aria-label", "Convite");
+    nudge.innerHTML = '<button class="nudge__close" type="button" aria-label="Fechar"><svg class="icon" aria-hidden="true"><use href="/assets/img/icons.svg#i-close"></use></svg></button><span class="icon-badge icon-badge--accent"><svg class="icon" aria-hidden="true"><use href="/assets/img/icons.svg#i-clipboard"></use></svg></span><div><strong>Tem uma lista de materiais?</strong><p>Envie completa e receba uma única cotação, conferida por um especialista.</p><div class="btn-row"><a class="btn btn--accent btn--sm" href="/orcamento/">Enviar lista</a><a class="btn btn--ghost btn--sm" href="#" data-open-catalog>Ver catálogo</a></div></div>';
+    document.body.appendChild(nudge);
+    var nudgeShown = false;
+    window.addEventListener("scroll", function () {
+      if (nudgeShown || hasLead() || store.get("mc_nudge", 0) > Date.now() - 3 * 864e5) return;
+      var h = document.documentElement.scrollHeight - innerHeight;
+      if (h > 0 && scrollY / h > 0.55) { nudgeShown = true; nudge.classList.add("is-visible"); track("nudge_show"); }
+    }, { passive: true });
+    $(".nudge__close", nudge).addEventListener("click", function () { nudge.classList.remove("is-visible"); store.set("mc_nudge", Date.now()); });
+  }
+  document.addEventListener("click", function (e) {
+    var b = e.target.closest && e.target.closest("[data-open-catalog]");
+    if (!b) return;
+    e.preventDefault();
+    if ($(".nudge")) $(".nudge").classList.remove("is-visible");
+    openModal(catModal);
   });
   document.addEventListener("click", function (e) {
     var a = e.target.closest && e.target.closest("a[href^='tel:'], a[href^='mailto:']");
@@ -545,7 +664,22 @@
       var payload = buildPayload(form);
       var kind = form.getAttribute("data-kind") || "lead";
 
+      if (kind === "whatsapp") {
+        // Abre o WhatsApp no mesmo gesto do clique (evita bloqueio de pop-up) e registra o lead em segundo plano
+        var text = "Olá, MC Produtos! Sou " + payload.name + (payload.company_name ? " (" + payload.company_name + ")" : "") + ". Tenho interesse em " + (payload.cf_produto_de_interesse || "seus produtos") + ".";
+        window.open(waLink(text), "_blank", "noopener");
+        sendLead(payload).catch(function () {});
+        store.set("mc_lead", { name: payload.name, ts: Date.now() });
+        track("generate_lead", { form_id: payload.conversion_identifier, lead_type: kind, product: payload.cf_produto_de_interesse || "" });
+        track("whatsapp_click", { link_location: "pre-cadastro" });
+        if (btn) btn.classList.remove("is-loading");
+        form.reset();
+        closeModal(form.closest(".modal"));
+        return;
+      }
+
       sendLead(payload).then(function (res) {
+        store.set("mc_lead", { name: payload.name, ts: Date.now() });
         track("generate_lead", { form_id: payload.conversion_identifier, lead_type: kind, product: payload.cf_produto_de_interesse || "" });
         if (kind === "catalog") {
           track("catalog_download");

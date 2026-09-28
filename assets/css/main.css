@@ -721,3 +721,47 @@ body.menu-open { overflow: hidden; }
 .sector__img img { width: 100%; height: 100%; object-fit: cover; }
 .sector:hover .sector__img { opacity: .45; transform: scale(1.05); }
 .sector h3, .sector p { z-index: 1; }
+
+/* ---------- Modais de captura ---------- */
+.modal { position: fixed; inset: 0; z-index: 170; display: grid; place-items: center; padding: 16px; }
+.modal[hidden] { display: none; }
+.modal__backdrop { position: absolute; inset: 0; background: rgba(10,10,11,.62); backdrop-filter: blur(4px); -webkit-backdrop-filter: blur(4px); opacity: 0; transition: opacity .3s; }
+.modal__box { position: relative; width: min(560px, 100%); max-height: calc(100dvh - 32px); overflow-y: auto; background: #fff; border-radius: var(--radius-lg); padding: clamp(22px, 4vw, 34px); box-shadow: var(--shadow-lg); opacity: 0; transform: translateY(16px) scale(.98); transition: opacity .3s, transform .4s var(--ease); }
+#cat-offer .modal__box { width: min(820px, 100%); }
+.modal.is-open .modal__backdrop { opacity: 1; }
+.modal.is-open .modal__box { opacity: 1; transform: none; }
+.modal__close { position: absolute; top: 10px; right: 10px; z-index: 2; }
+.modal__box h2 { font-size: 1.4rem; margin-bottom: 6px; }
+.modal__head { display: flex; gap: 14px; align-items: center; margin: -4px 36px 20px 0; }
+.modal__head p { margin: 0; font-size: .85rem; color: var(--muted); }
+.modal__head h2 { margin: 0; }
+.modal__head--whats > .icon { width: 44px; height: 44px; padding: 10px; border-radius: 12px; background: var(--whats); color: #06331a; flex: none; }
+.modal__skip { display: block; margin: 4px auto 0; font-size: .82rem; color: var(--muted); text-decoration: underline; padding: 6px; }
+.modal__split { display: grid; gap: 24px; }
+@media (min-width: 760px) { .modal__split { grid-template-columns: .8fr 1fr; align-items: stretch; } }
+.modal__art { position: relative; border-radius: var(--radius); overflow: hidden; background: var(--ink); min-height: 160px; display: flex; align-items: flex-end; padding: 20px; color: #fff; }
+.modal__art img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: .55; }
+.modal__art span { position: relative; font-size: .8rem; letter-spacing: .14em; text-transform: uppercase; font-weight: 700; line-height: 1.2; }
+.modal__art b { font-size: 2.6rem; letter-spacing: -.04em; }
+
+/* ---------- Convite deslizante ---------- */
+.nudge { position: fixed; z-index: 95; left: 12px; right: 12px; bottom: 88px; display: flex; gap: 14px; align-items: flex-start; max-width: 400px; padding: 18px 40px 18px 18px; background: #fff; border: 1px solid var(--steel-150); border-left: 4px solid var(--accent); border-radius: var(--radius); box-shadow: var(--shadow-lg); transform: translateY(24px); opacity: 0; visibility: hidden; transition: transform .45s var(--ease), opacity .35s, visibility .35s; }
+.nudge.is-visible { transform: none; opacity: 1; visibility: visible; }
+.nudge strong { color: var(--ink); display: block; }
+.nudge p { font-size: .86rem; color: var(--muted); margin: 4px 0 12px; }
+.nudge .icon-badge { width: 42px; height: 42px; flex: none; }
+.nudge__close { position: absolute; top: 8px; right: 8px; width: 30px; height: 30px; display: grid; place-items: center; border-radius: 50%; color: var(--steel-500); }
+.nudge__close:hover { background: var(--steel-100); }
+.nudge__close .icon { width: 16px; height: 16px; }
+@media (min-width: 900px) { .nudge { left: 24px; right: auto; bottom: 24px; } }
+
+/* ---------- Tom corporativo: efeitos mais contidos ---------- */
+.quick-card::before { display: none; }
+.quick-card { background: rgba(18,18,20,.82); border-color: rgba(255,255,255,.12); }
+.hero__glow { opacity: .45; animation: none; }
+.hero__glow--2 { display: none; }
+.pill b { border-radius: 4px; }
+.btn { border-radius: 10px; }
+.btn::after { display: none; }
+.chip, .add-quote, .tabs__list, .tabs__list button { border-radius: 8px; }
+.tabs__list { border-radius: 12px; }
