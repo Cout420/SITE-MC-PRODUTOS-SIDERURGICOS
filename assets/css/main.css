@@ -672,3 +672,52 @@ body.menu-open { overflow: hidden; }
 .small { font-size: .86rem; }
 .stack { display: grid; gap: 16px; }
 .divider { height: 1px; background: var(--steel-150); border: 0; margin: 32px 0; }
+
+/* ==========================================================================
+   Imagens (renders 3D / fotos reais) — v2
+   ========================================================================== */
+.media { position: relative; overflow: hidden; background: var(--ink-2); isolation: isolate; }
+.media img { width: 100%; height: 100%; object-fit: cover; transition: transform 1.2s var(--ease), filter .6s; }
+.media::after { content: ""; position: absolute; inset: 0; pointer-events: none; background: linear-gradient(180deg, transparent 55%, rgba(10,10,11,.55)); }
+
+/* Hero com imagem de fundo em tela cheia + parallax */
+.hero--image { min-height: min(92vh, 860px); display: flex; align-items: center; }
+.hero__photo { position: absolute; inset: 0; z-index: -2; }
+.hero__photo img { width: 100%; height: 118%; object-fit: cover; object-position: 70% 50%; will-change: transform; transform: translate3d(0, var(--py, 0px), 0) scale(1.04); }
+.hero__photo::after { content: ""; position: absolute; inset: 0; background:
+  linear-gradient(90deg, rgba(10,10,11,.96) 0%, rgba(10,10,11,.86) 38%, rgba(10,10,11,.35) 70%, rgba(10,10,11,.55) 100%),
+  linear-gradient(0deg, rgba(10,10,11,.9) 0%, transparent 35%); }
+@media (max-width: 1023px) { .hero__photo::after { background: linear-gradient(180deg, rgba(10,10,11,.7), rgba(10,10,11,.92) 55%); } }
+
+/* Card de produto com imagem */
+.card--media { padding: 0; overflow: hidden; }
+.card--media .card__img { aspect-ratio: 16 / 10; border-radius: 0; }
+.card--media:hover .card__img img { transform: scale(1.07); }
+.card--media .card__content { display: flex; flex-direction: column; gap: 12px; padding: 22px clamp(20px, 2.4vw, 28px) 26px; flex: 1; }
+.card--media .card__content .icon-badge { margin-top: -50px; position: relative; z-index: 2; box-shadow: 0 10px 24px -8px rgba(0,0,0,.45); border: 3px solid #fff; }
+.card--media.card--feature .card__content .icon-badge { border-color: var(--ink); }
+
+/* Imagem ao lado do conteúdo (split) */
+.figure { border-radius: var(--radius-lg); aspect-ratio: 4 / 3; box-shadow: var(--shadow-lg); }
+.figure--tall { aspect-ratio: 4 / 5; }
+.figure__badge { position: absolute; left: 18px; bottom: 18px; z-index: 2; display: inline-flex; align-items: center; gap: 10px; background: rgba(255,255,255,.95); color: var(--ink); padding: 10px 14px; border-radius: 12px; font-weight: 700; font-size: .88rem; box-shadow: var(--shadow); }
+.figure__badge .icon { color: var(--accent); }
+.js .figure[data-reveal] img { transform: scale(1.12); }
+.js .figure[data-reveal].is-in img { transform: scale(1); }
+
+/* Page hero de páginas internas com imagem */
+.page-hero--image { padding-block: clamp(64px, 10vw, 128px); }
+.page-hero--image .hero__photo::after { background: linear-gradient(90deg, rgba(10,10,11,.95) 0%, rgba(10,10,11,.8) 45%, rgba(10,10,11,.3) 100%); }
+
+/* Galeria / faixa de imagens */
+.gallery { display: grid; gap: 12px; grid-template-columns: repeat(2, 1fr); }
+@media (min-width: 900px) { .gallery { grid-template-columns: repeat(4, 1fr); } .gallery > :first-child { grid-column: span 2; grid-row: span 2; } }
+.gallery .media { border-radius: var(--radius); aspect-ratio: 1; }
+.gallery .media:hover img { transform: scale(1.06); }
+
+.post__cover img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; transition: transform .8s var(--ease); }
+.post:hover .post__cover img { transform: scale(1.06); }
+.sector__img { position: absolute; inset: 0; z-index: 0; opacity: .28; transition: opacity .5s, transform 1s var(--ease); }
+.sector__img img { width: 100%; height: 100%; object-fit: cover; }
+.sector:hover .sector__img { opacity: .45; transform: scale(1.05); }
+.sector h3, .sector p { z-index: 1; }

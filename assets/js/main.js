@@ -65,6 +65,7 @@
   var header = $(".header");
   var progress = $(".progress span");
   var mobileBar = $(".mobile-bar");
+  var heroPhoto = $(".hero__photo img");
   var ticking = false;
   function onScroll() {
     var y = window.scrollY;
@@ -74,6 +75,7 @@
       progress.style.transform = "scaleX(" + (h > 0 ? y / h : 0) + ")";
     }
     if (mobileBar) mobileBar.classList.toggle("is-visible", y > 320);
+    if (heroPhoto && !reduced && y < window.innerHeight * 1.2) heroPhoto.style.setProperty("--py", (y * 0.28).toFixed(1) + "px");
     stepsProgress();
     ticking = false;
   }
