@@ -1,0 +1,32 @@
+# Redirects do site antigo (WordPress) para o novo site estático
+# Formato Cloudflare Pages / Netlify — regras avaliadas de cima para baixo
+
+# Rascunhos publicados por engano no site antigo
+/nova-home/            /                                    301
+/landing-1/             /                                    301
+
+# Catálogo antigo aberto direto pelo menu -> vira isca de lead
+/catalogo/              /#catalogo                           301
+
+# Autores e categorias do WordPress
+/author/*               /                                    301
+/category/*              /blog/                               301
+
+# URL de spam antiga indexada no Google
+/2023/*                  /                                    301
+
+# Sitemap do Yoast
+/sitemap_index.xml       /sitemap.xml                         301
+
+# Painel e login do WordPress — não existem mais
+/wp-admin*               /404.html                            404
+/wp-login.php            /404.html                            404
+
+# Feed RSS do WordPress
+/feed/                   /blog/                               301
+
+# PDFs publicados no WordPress
+/wp-content/uploads/2025/11/MC-Catalogo-2026-web.pdf                          /#catalogo                                              301
+/wp-content/uploads/2025/12/DEX-CERTIFICADO-MC-COMERCIO.pdf                   /assets/docs/DEX-CERTIFICADO-MC-COMERCIO.pdf            301
+/wp-content/uploads/2025/11/DEX-CERTIFICADO-MC-COMERCIO.pdf                   /assets/docs/DEX-CERTIFICADO-MC-COMERCIO.pdf            301
+/wp-content/uploads/2025/11/Politica-da-Qualidade-e-Objetivos-MC-2024.pdf     /assets/docs/Politica-da-Qualidade-e-Objetivos-MC-2024.pdf  301

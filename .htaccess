@@ -1,0 +1,58 @@
+# MC Produtos Siderúrgicos — regras Apache/LiteSpeed (mod_rewrite + mod_headers)
+
+ErrorDocument 404 /404.html
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  # Rascunhos publicados por engano no site antigo
+  RewriteRule ^nova-home/?$ / [R=301,L]
+  RewriteRule ^landing-1/?$ / [R=410,L]
+
+  # Catálogo antigo aberto direto pelo menu -> vira isca de lead
+  RewriteRule ^catalogo/?$ /#catalogo [R=301,L]
+
+  # Autores e categorias do WordPress
+  RewriteRule ^author/ / [R=301,L]
+  RewriteRule ^category/ /blog/ [R=301,L]
+
+  # URL de spam antiga indexada no Google
+  RewriteRule ^2023/ - [G,L]
+
+  # Sitemap do Yoast
+  RewriteRule ^sitemap_index\.xml$ /sitemap.xml [R=301,L]
+
+  # Painel e login do WordPress — não existem mais
+  RewriteRule ^wp-admin - [G,L]
+  RewriteRule ^wp-login\.php$ - [G,L]
+
+  # Feed RSS do WordPress
+  RewriteRule ^feed/?$ /blog/ [R=301,L]
+
+  # PDFs publicados no WordPress
+  RewriteRule ^wp-content/uploads/2025/11/MC-Catalogo-2026-web\.pdf$ /#catalogo [R=301,L]
+  RewriteRule ^wp-content/uploads/2025/12/DEX-CERTIFICADO-MC-COMERCIO\.pdf$ /assets/docs/DEX-CERTIFICADO-MC-COMERCIO.pdf [R=301,L]
+  RewriteRule ^wp-content/uploads/2025/11/DEX-CERTIFICADO-MC-COMERCIO\.pdf$ /assets/docs/DEX-CERTIFICADO-MC-COMERCIO.pdf [R=301,L]
+  RewriteRule ^wp-content/uploads/2025/11/Politica-da-Qualidade-e-Objetivos-MC-2024\.pdf$ /assets/docs/Politica-da-Qualidade-e-Objetivos-MC-2024.pdf [R=301,L]
+</IfModule>
+
+<IfModule mod_headers.c>
+  Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains"
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set X-Frame-Options "SAMEORIGIN"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+  Header always set Permissions-Policy "camera=(), microphone=(), geolocation=()"
+  Header always set Content-Security-Policy "default-src 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'self'; script-src 'self' 'unsafe-inline' www.googletagmanager.com *.google-analytics.com *.googleadservices.com googleads.g.doubleclick.net api.rd.services *.rdstation.com.br d335luupugsy2.cloudfront.net connect.facebook.net; style-src 'self' 'unsafe-inline' fonts.googleapis.com; font-src 'self' fonts.gstatic.com; img-src 'self' data: *.google-analytics.com *.googleadservices.com googleads.g.doubleclick.net www.facebook.com *.rdstation.com.br; connect-src 'self' www.googletagmanager.com *.google-analytics.com *.googleadservices.com googleads.g.doubleclick.net api.rd.services *.rdstation.com.br d335luupugsy2.cloudfront.net; frame-src 'self' www.google.com; form-action 'self' api.rd.services *.rdstation.com.br"
+
+  <FilesMatch "\.html$">
+    Header always set Cache-Control "public, max-age=0, must-revalidate"
+  </FilesMatch>
+</IfModule>
+
+<IfModule mod_expires.c>
+  ExpiresActive On
+  <FilesMatch "\.(css|js|svg|png|jpg|jpeg|webp|avif|woff2?)$">
+    ExpiresDefault "access plus 7 days"
+    Header set Cache-Control "public, max-age=604800"
+  </FilesMatch>
+</IfModule>
