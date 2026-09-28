@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" focusable="false">
+<defs>
+<pattern id="hatchValv" width="6" height="6" patternTransform="rotate(45)" patternUnits="userSpaceOnUse"><line x1="0" y1="0" x2="0" y2="6" stroke="#8d9098" stroke-width="0.8" stroke-opacity="0.55"/></pattern>
+<pattern id="hatchChapa" width="6" height="6" patternTransform="rotate(45)" patternUnits="userSpaceOnUse"><line x1="0" y1="0" x2="0" y2="6" stroke="#8d9098" stroke-width="0.8" stroke-opacity="0.55"/></pattern>
+</defs>
+<line x1="50.0" y1="250.0" x2="340.0" y2="250.0" stroke="#c9ccd3" stroke-width="0.8" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.45" stroke-dasharray="18 4 3 4"/>
+<line x1="190.0" y1="150.0" x2="190.0" y2="350.0" stroke="#c9ccd3" stroke-width="0.8" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.45" stroke-dasharray="18 4 3 4"/>
+<polygon points="285.0,250.0 237.5,332.3 142.5,332.3 95.0,250.0 142.5,167.7 237.5,167.7" fill="url(#hatchValv)" opacity="0.35"/>
+<polygon points="285.0,250.0 237.5,332.3 142.5,332.3 95.0,250.0 142.5,167.7 237.5,167.7" stroke="#c9ccd3" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="50.0" y1="224.0" x2="95.0" y2="224.0" stroke="#c9ccd3" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="50.0" y1="276.0" x2="95.0" y2="276.0" stroke="#c9ccd3" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="285.0" y1="224.0" x2="340.0" y2="224.0" stroke="#c9ccd3" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="285.0" y1="276.0" x2="340.0" y2="276.0" stroke="#c9ccd3" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="190.0" cy="250.0" r="60.0" stroke="#c9ccd3" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="130.0" y1="224.0" x2="164.0" y2="224.0" stroke="#c9ccd3" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="130.0" y1="276.0" x2="164.0" y2="276.0" stroke="#c9ccd3" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="216.0" y1="224.0" x2="250.0" y2="224.0" stroke="#c9ccd3" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="216.0" y1="276.0" x2="250.0" y2="276.0" stroke="#c9ccd3" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="190.0" y1="190.0" x2="190.0" y2="130.0" stroke="#c9ccd3" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="150.0,130.0 240.0,130.0 240.0,142.0 150.0,142.0" stroke="#c9ccd3" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="190.0" y="380.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" font-weight="500" letter-spacing="0.4" fill="#8d9098" text-anchor="middle">VÁLVULA ESFERA — CORTE</text>
+<rect x="470.0" y="150.0" width="150.0" height="40.0" fill="url(#hatchChapa)" opacity="0.5"/>
+<polygon points="470.0,150.0 620.0,150.0 620.0,190.0 470.0,190.0" stroke="#c9ccd3" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<marker id="dimChapa" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#ff5a1f"/></marker>
+<line x1="440.0" y1="150.0" x2="454.0" y2="150.0" stroke="#8d9098" stroke-width="0.8" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.5"/>
+<line x1="440.0" y1="190.0" x2="454.0" y2="190.0" stroke="#8d9098" stroke-width="0.8" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.5"/>
+<line x1="450.0" y1="150.0" x2="450.0" y2="190.0" stroke="#ff5a1f" stroke-width="1" marker-start="url(#dimChapa)" marker-end="url(#dimChapa)"/>
+<text x="440.0" y="170.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" font-weight="700" letter-spacing="0.4" fill="#ff5a1f" text-anchor="middle" transform="rotate(-90 440.0 170.0)">e</text>
+<text x="545.0" y="136.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" font-weight="500" letter-spacing="0.4" fill="#8d9098" text-anchor="middle">CHAPA</text>
+<line x1="650.0" y1="140.0" x2="650.0" y2="380.0" stroke="#c9ccd3" stroke-width="0.8" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.45" stroke-dasharray="18 4 3 4"/>
+<polygon points="676.0,170.0 663.0,192.5 637.0,192.5 624.0,170.0 637.0,147.5 663.0,147.5" stroke="#c9ccd3" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="650.0" y1="196.0" x2="650.0" y2="350.0" stroke="#c9ccd3" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="641.0" y1="210.0" x2="659.0" y2="210.0" stroke="#c9ccd3" stroke-width="0.8" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.6"/>
+<line x1="641.0" y1="224.0" x2="659.0" y2="224.0" stroke="#c9ccd3" stroke-width="0.8" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.6"/>
+<line x1="641.0" y1="238.0" x2="659.0" y2="238.0" stroke="#c9ccd3" stroke-width="0.8" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.6"/>
+<line x1="641.0" y1="252.0" x2="659.0" y2="252.0" stroke="#c9ccd3" stroke-width="0.8" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.6"/>
+<line x1="641.0" y1="266.0" x2="659.0" y2="266.0" stroke="#c9ccd3" stroke-width="0.8" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.6"/>
+<line x1="641.0" y1="280.0" x2="659.0" y2="280.0" stroke="#c9ccd3" stroke-width="0.8" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.6"/>
+<polygon points="680.0,380.0 665.0,406.0 635.0,406.0 620.0,380.0 635.0,354.0 665.0,354.0" stroke="#c9ccd3" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="650.0" cy="380.0" r="12.0" stroke="#c9ccd3" stroke-width="1.2" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.7"/>
+<text x="650.0" y="130.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" font-weight="500" letter-spacing="0.4" fill="#8d9098" text-anchor="middle">PARAFUSO E PORCA SEXTAVADA</text>
+</svg>

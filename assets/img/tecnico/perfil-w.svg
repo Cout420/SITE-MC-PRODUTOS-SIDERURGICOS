@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" focusable="false">
+<defs>
+
+</defs>
+<line x1="200.0" y1="70.0" x2="200.0" y2="430.0" stroke="#c9ccd3" stroke-width="0.8" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.45" stroke-dasharray="18 4 3 4"/>
+<line x1="70.0" y1="250.0" x2="330.0" y2="250.0" stroke="#c9ccd3" stroke-width="0.8" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.45" stroke-dasharray="18 4 3 4"/>
+<polygon points="100.0,100.0 300.0,100.0 300.0,132.0 211.0,132.0 211.0,368.0 300.0,368.0 300.0,400.0 100.0,400.0 100.0,368.0 189.0,368.0 189.0,132.0 100.0,132.0" stroke="#c9ccd3" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M175.0,132.0 q14,0 14,14" stroke="#c9ccd3" stroke-width="1.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<marker id="dimD" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#ff5a1f"/></marker>
+<line x1="42.0" y1="100.0" x2="58.0" y2="100.0" stroke="#8d9098" stroke-width="0.8" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.5"/>
+<line x1="42.0" y1="400.0" x2="58.0" y2="400.0" stroke="#8d9098" stroke-width="0.8" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.5"/>
+<line x1="54.0" y1="100.0" x2="54.0" y2="400.0" stroke="#ff5a1f" stroke-width="1" marker-start="url(#dimD)" marker-end="url(#dimD)"/>
+<text x="44.0" y="250.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" font-weight="700" letter-spacing="0.4" fill="#ff5a1f" text-anchor="middle" transform="rotate(-90 44.0 250.0)">d</text>
+<marker id="dimBf" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#8d9098"/></marker>
+<line x1="100.0" y1="44.0" x2="100.0" y2="64.0" stroke="#8d9098" stroke-width="0.8" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.5"/>
+<line x1="300.0" y1="44.0" x2="300.0" y2="64.0" stroke="#8d9098" stroke-width="0.8" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.5"/>
+<line x1="100.0" y1="60.0" x2="300.0" y2="60.0" stroke="#8d9098" stroke-width="1" marker-start="url(#dimBf)" marker-end="url(#dimBf)"/>
+<text x="200.0" y="54.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" font-weight="500" letter-spacing="0.4" fill="#8d9098" text-anchor="middle">bf</text>
+<line x1="211.0" y1="244.0" x2="271.0" y2="210.0" stroke="#c9ccd3" stroke-width="0.8" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.6"/>
+<text x="275.0" y="210.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" font-weight="500" letter-spacing="0.4" fill="#8d9098" text-anchor="start">tw</text>
+<line x1="280.0" y1="116.0" x2="346.0" y2="90.0" stroke="#c9ccd3" stroke-width="0.8" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.6"/>
+<text x="350.0" y="90.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" font-weight="500" letter-spacing="0.4" fill="#8d9098" text-anchor="start">tf</text>
+<line x1="175.0" y1="146.0" x2="54.0" y2="172.0" stroke="#c9ccd3" stroke-width="0.8" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.6"/>
+<text x="24.0" y="176.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" font-weight="500" letter-spacing="0.4" fill="#8d9098" text-anchor="start">r</text>
+<text x="200.0" y="446.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="700" letter-spacing="0.4" fill="#8d9098" text-anchor="middle">PERFIL W</text>
+<polygon points="560.0,190.0 650.0,190.0 650.0,204.0 574.0,204.0 574.0,306.0 650.0,306.0 650.0,320.0 560.0,320.0" stroke="#c9ccd3" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="544.0" y1="255.0" x2="666.0" y2="255.0" stroke="#c9ccd3" stroke-width="0.8" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.45" stroke-dasharray="18 4 3 4"/>
+<text x="605.0" y="344.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" font-weight="500" letter-spacing="0.4" fill="#8d9098" text-anchor="middle">PERFIL U</text>
+<polygon points="700.0,190.0 714.0,190.0 714.0,266.0 790.0,266.0 790.0,280.0 700.0,280.0" stroke="#c9ccd3" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="745.0" y="304.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" font-weight="500" letter-spacing="0.4" fill="#8d9098" text-anchor="middle">CANTONEIRA L</text>
+</svg>

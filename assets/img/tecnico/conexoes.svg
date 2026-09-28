@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" focusable="false">
+<defs>
+
+</defs>
+<path d="M-50.0,150.0 L-50.0,330.0 A140.0,140.0 0 0,0 90.0,190.0 L250.0,190.0" stroke="#c9ccd3" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M-10.0,150.0 L-10.0,330.0 A100.0,100.0 0 0,0 90.0,230.0 L250.0,230.0" stroke="#c9ccd3" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="-50.0" y1="150.0" x2="-10.0" y2="150.0" stroke="#c9ccd3" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="250.0" y1="190.0" x2="250.0" y2="230.0" stroke="#c9ccd3" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M-30.0,330.0 A120.0,120.0 0 0,0 90.0,210.0" stroke="#c9ccd3" stroke-width="0.8" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.45" stroke-dasharray="18 4 3 4"/>
+<line x1="90.0" y1="138.0" x2="90.0" y2="336.0" stroke="#c9ccd3" stroke-width="0.8" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.45" stroke-dasharray="18 4 3 4"/>
+<line x1="84.0" y1="190.0" x2="270.0" y2="190.0" stroke="#c9ccd3" stroke-width="0.8" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.45" stroke-dasharray="18 4 3 4"/>
+<line x1="-10.6" y1="264.6" x2="-40.6" y2="240.6" stroke="#c9ccd3" stroke-width="0.8" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.6"/>
+<text x="-44.6" y="236.6" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" font-weight="700" letter-spacing="0.4" fill="#ff5a1f" text-anchor="end">R = 1,5 D</text>
+<text x="90.0" y="470.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="500" letter-spacing="0.4" fill="#8d9098" text-anchor="middle">CURVA 90° RAIO LONGO</text>
+<line x1="290.0" y1="226.0" x2="510.0" y2="226.0" stroke="#c9ccd3" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="290.0" y1="294.0" x2="510.0" y2="294.0" stroke="#c9ccd3" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="366.0" y1="90.0" x2="366.0" y2="226.0" stroke="#c9ccd3" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="434.0" y1="90.0" x2="434.0" y2="226.0" stroke="#c9ccd3" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="270.0" y1="260.0" x2="530.0" y2="260.0" stroke="#c9ccd3" stroke-width="0.8" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.45" stroke-dasharray="18 4 3 4"/>
+<line x1="400.0" y1="70.0" x2="400.0" y2="294.0" stroke="#c9ccd3" stroke-width="0.8" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.45" stroke-dasharray="18 4 3 4"/>
+<text x="400.0" y="350.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="500" letter-spacing="0.4" fill="#8d9098" text-anchor="middle">TÊ IGUAL</text>
+<line x1="560.0" y1="190.0" x2="620.0" y2="190.0" stroke="#c9ccd3" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="560.0" y1="330.0" x2="620.0" y2="330.0" stroke="#c9ccd3" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="620.0" y1="190.0" x2="710.0" y2="222.0" stroke="#c9ccd3" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="620.0" y1="330.0" x2="710.0" y2="298.0" stroke="#c9ccd3" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="710.0" y1="222.0" x2="780.0" y2="222.0" stroke="#c9ccd3" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="710.0" y1="298.0" x2="780.0" y2="298.0" stroke="#c9ccd3" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="540.0" y1="260.0" x2="800.0" y2="260.0" stroke="#c9ccd3" stroke-width="0.8" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.45" stroke-dasharray="18 4 3 4"/>
+<marker id="dimDE1" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#8d9098"/></marker>
+<line x1="528.0" y1="190.0" x2="544.0" y2="190.0" stroke="#8d9098" stroke-width="0.8" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.5"/>
+<line x1="528.0" y1="330.0" x2="544.0" y2="330.0" stroke="#8d9098" stroke-width="0.8" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.5"/>
+<line x1="540.0" y1="190.0" x2="540.0" y2="330.0" stroke="#8d9098" stroke-width="1" marker-start="url(#dimDE1)" marker-end="url(#dimDE1)"/>
+<text x="530.0" y="260.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" font-weight="500" letter-spacing="0.4" fill="#8d9098" text-anchor="middle" transform="rotate(-90 530.0 260.0)">DE1</text>
+<marker id="dimDE2" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#ff5a1f"/></marker>
+<line x1="792.0" y1="222.0" x2="808.0" y2="222.0" stroke="#8d9098" stroke-width="0.8" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.5"/>
+<line x1="792.0" y1="298.0" x2="808.0" y2="298.0" stroke="#8d9098" stroke-width="0.8" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.5"/>
+<line x1="804.0" y1="222.0" x2="804.0" y2="298.0" stroke="#ff5a1f" stroke-width="1" marker-start="url(#dimDE2)" marker-end="url(#dimDE2)"/>
+<text x="794.0" y="260.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" font-weight="700" letter-spacing="0.4" fill="#ff5a1f" text-anchor="middle" transform="rotate(-90 794.0 260.0)">DE2</text>
+<text x="670.0" y="350.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="500" letter-spacing="0.4" fill="#8d9098" text-anchor="middle">REDUÇÃO CONCÊNTRICA</text>
+</svg>

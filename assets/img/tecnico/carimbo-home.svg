@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" role="img" focusable="false">
+<defs>
+<pattern id="hatchHome" width="6" height="6" patternTransform="rotate(45)" patternUnits="userSpaceOnUse"><line x1="0" y1="0" x2="0" y2="6" stroke="#8d9098" stroke-width="0.8" stroke-opacity="0.55"/></pattern>
+<marker id="arrHomeCF" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#ff5a1f"/></marker>
+</defs>
+<circle cx="210.0" cy="470.0" r="46.0" stroke="#c9ccd3" stroke-width="1.4" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.9"/>
+<circle cx="210.0" cy="470.0" r="36.0" stroke="#c9ccd3" stroke-width="0.9" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.55"/>
+<circle cx="295.1" cy="470.0" r="46.0" stroke="#c9ccd3" stroke-width="1.4" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.9"/>
+<circle cx="295.1" cy="470.0" r="36.0" stroke="#c9ccd3" stroke-width="0.9" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.55"/>
+<circle cx="380.2" cy="470.0" r="46.0" stroke="#c9ccd3" stroke-width="1.4" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.9"/>
+<circle cx="380.2" cy="470.0" r="36.0" stroke="#c9ccd3" stroke-width="0.9" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.55"/>
+<circle cx="465.3" cy="470.0" r="46.0" stroke="#c9ccd3" stroke-width="1.4" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.9"/>
+<circle cx="465.3" cy="470.0" r="36.0" stroke="#c9ccd3" stroke-width="0.9" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.55"/>
+<circle cx="252.6" cy="400.0" r="46.0" stroke="#c9ccd3" stroke-width="1.4" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.9"/>
+<circle cx="252.6" cy="400.0" r="36.0" stroke="#c9ccd3" stroke-width="0.9" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.55"/>
+<circle cx="337.7" cy="400.0" r="46.0" stroke="#c9ccd3" stroke-width="1.4" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.9"/>
+<circle cx="337.7" cy="400.0" r="36.0" stroke="#c9ccd3" stroke-width="0.9" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.55"/>
+<circle cx="422.8" cy="400.0" r="46.0" stroke="#c9ccd3" stroke-width="1.4" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.9"/>
+<circle cx="422.8" cy="400.0" r="36.0" stroke="#c9ccd3" stroke-width="0.9" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.55"/>
+<circle cx="507.9" cy="400.0" r="46.0" stroke="#c9ccd3" stroke-width="1.4" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.9"/>
+<circle cx="507.9" cy="400.0" r="36.0" stroke="#c9ccd3" stroke-width="0.9" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.55"/>
+<circle cx="210.0" cy="330.0" r="46.0" stroke="#c9ccd3" stroke-width="1.4" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.9"/>
+<circle cx="210.0" cy="330.0" r="36.0" stroke="#c9ccd3" stroke-width="0.9" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.55"/>
+<circle cx="295.1" cy="330.0" r="46.0" stroke="#c9ccd3" stroke-width="1.4" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.9"/>
+<circle cx="295.1" cy="330.0" r="36.0" stroke="#c9ccd3" stroke-width="0.9" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.55"/>
+<circle cx="380.2" cy="330.0" r="46.0" stroke="#c9ccd3" stroke-width="1.4" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.9"/>
+<circle cx="380.2" cy="330.0" r="36.0" stroke="#c9ccd3" stroke-width="0.9" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.55"/>
+<circle cx="465.3" cy="330.0" r="46.0" stroke="#c9ccd3" stroke-width="1.4" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.9"/>
+<circle cx="465.3" cy="330.0" r="36.0" stroke="#c9ccd3" stroke-width="0.9" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.55"/>
+<circle cx="550.4" cy="330.0" r="46.0" stroke="#c9ccd3" stroke-width="1.4" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.9"/>
+<circle cx="550.4" cy="330.0" r="36.0" stroke="#c9ccd3" stroke-width="0.9" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.55"/>
+<circle cx="252.6" cy="260.0" r="46.0" stroke="#c9ccd3" stroke-width="1.4" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.9"/>
+<circle cx="252.6" cy="260.0" r="36.0" stroke="#c9ccd3" stroke-width="0.9" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.55"/>
+<circle cx="337.7" cy="260.0" r="46.0" stroke="#c9ccd3" stroke-width="1.4" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.9"/>
+<circle cx="337.7" cy="260.0" r="36.0" stroke="#c9ccd3" stroke-width="0.9" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.55"/>
+<circle cx="422.8" cy="260.0" r="46.0" stroke="#c9ccd3" stroke-width="1.4" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.9"/>
+<circle cx="422.8" cy="260.0" r="36.0" stroke="#c9ccd3" stroke-width="0.9" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.55"/>
+<circle cx="507.9" cy="260.0" r="46.0" stroke="#c9ccd3" stroke-width="1.4" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.9"/>
+<circle cx="507.9" cy="260.0" r="36.0" stroke="#c9ccd3" stroke-width="0.9" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.55"/>
+<marker id="dimHomeDE" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#ff5a1f"/></marker>
+<line x1="249.1" y1="534.0" x2="249.1" y2="554.0" stroke="#8d9098" stroke-width="0.8" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.5"/>
+<line x1="341.1" y1="534.0" x2="341.1" y2="554.0" stroke="#8d9098" stroke-width="0.8" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.5"/>
+<line x1="249.1" y1="550.0" x2="341.1" y2="550.0" stroke="#ff5a1f" stroke-width="1" marker-start="url(#dimHomeDE)" marker-end="url(#dimHomeDE)"/>
+<text x="295.1" y="544.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" font-weight="700" letter-spacing="0.4" fill="#ff5a1f" text-anchor="middle">DE</text>
+<line x1="640.0" y1="260.0" x2="1080.0" y2="260.0" stroke="#c9ccd3" stroke-width="0.8" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.45" stroke-dasharray="18 4 3 4"/>
+<line x1="860.0" y1="40.0" x2="860.0" y2="480.0" stroke="#c9ccd3" stroke-width="0.8" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.45" stroke-dasharray="18 4 3 4"/>
+<circle cx="860.0" cy="260.0" r="190.0" stroke="#c9ccd3" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="860.0" cy="260.0" r="145.0" stroke="#c9ccd3" stroke-width="0.8" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.45" stroke-dasharray="18 4 3 4"/>
+<circle cx="994.0" cy="315.5" r="11.0" stroke="#c9ccd3" stroke-width="1.3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="915.5" cy="394.0" r="11.0" stroke="#c9ccd3" stroke-width="1.3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="804.5" cy="394.0" r="11.0" stroke="#c9ccd3" stroke-width="1.3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="726.0" cy="315.5" r="11.0" stroke="#c9ccd3" stroke-width="1.3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="726.0" cy="204.5" r="11.0" stroke="#c9ccd3" stroke-width="1.3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="804.5" cy="126.0" r="11.0" stroke="#c9ccd3" stroke-width="1.3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="915.5" cy="126.0" r="11.0" stroke="#c9ccd3" stroke-width="1.3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="994.0" cy="204.5" r="11.0" stroke="#c9ccd3" stroke-width="1.3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="860.0" cy="260.0" r="58.0" stroke="#c9ccd3" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="994.0" y1="315.5" x2="726.0" y2="204.5" stroke="#ff5a1f" stroke-width="1.2" marker-start="url(#arrHomeCF)" marker-end="url(#arrHomeCF)"/>
+<text x="860.0" y="99.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" font-weight="700" letter-spacing="0.4" fill="#ff5a1f" text-anchor="middle">Ø CF</text>
+<line x1="60.0" y1="60.0" x2="1140.0" y2="60.0" stroke="#c9ccd3" stroke-width="0.8" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.35"/>
+<line x1="60.0" y1="60.0" x2="60.0" y2="100.0" stroke="#c9ccd3" stroke-width="0.8" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.35"/>
+<line x1="1140.0" y1="60.0" x2="1140.0" y2="100.0" stroke="#c9ccd3" stroke-width="0.8" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.35"/>
+<polygon points="860.0,600.0 1160.0,600.0 1160.0,676.0 860.0,676.0" stroke="#c9ccd3" stroke-width="1.3" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.8"/>
+<line x1="860.0" y1="634.0" x2="1160.0" y2="634.0" stroke="#c9ccd3" stroke-width="1" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.6"/>
+<line x1="1050.0" y1="634.0" x2="1050.0" y2="676.0" stroke="#c9ccd3" stroke-width="1" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.6"/>
+<text x="872.0" y="622.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" font-weight="700" letter-spacing="0.4" fill="#8d9098" text-anchor="start">MC PRODUTOS SIDERÚRGICOS</text>
+<text x="872.0" y="658.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" font-weight="500" letter-spacing="0.4" fill="#8d9098" text-anchor="start">DES. Nº 001</text>
+<text x="1060.0" y="658.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" font-weight="700" letter-spacing="0.4" fill="#ff5a1f" text-anchor="start">ESC. 1:10</text>
+</svg>

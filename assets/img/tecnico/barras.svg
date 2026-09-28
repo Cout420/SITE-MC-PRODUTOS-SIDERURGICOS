@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" focusable="false">
+<defs>
+
+</defs>
+<line x1="14.0" y1="230.0" x2="246.0" y2="230.0" stroke="#c9ccd3" stroke-width="0.8" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.45" stroke-dasharray="18 4 3 4"/>
+<line x1="130.0" y1="114.0" x2="130.0" y2="346.0" stroke="#c9ccd3" stroke-width="0.8" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.45" stroke-dasharray="18 4 3 4"/>
+<circle cx="130.0" cy="230.0" r="90.0" stroke="#c9ccd3" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<marker id="dimRed" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#ff5a1f"/></marker>
+<line x1="40.0" y1="94.0" x2="40.0" y2="114.0" stroke="#8d9098" stroke-width="0.8" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.5"/>
+<line x1="220.0" y1="94.0" x2="220.0" y2="114.0" stroke="#8d9098" stroke-width="0.8" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.5"/>
+<line x1="40.0" y1="110.0" x2="220.0" y2="110.0" stroke="#ff5a1f" stroke-width="1" marker-start="url(#dimRed)" marker-end="url(#dimRed)"/>
+<text x="130.0" y="104.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" font-weight="700" letter-spacing="0.4" fill="#ff5a1f" text-anchor="middle">Ø</text>
+<text x="130.0" y="366.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="500" letter-spacing="0.4" fill="#8d9098" text-anchor="middle">BARRA REDONDA</text>
+<line x1="229.0" y1="230.0" x2="431.0" y2="230.0" stroke="#c9ccd3" stroke-width="0.8" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.45" stroke-dasharray="18 4 3 4"/>
+<line x1="330.0" y1="129.0" x2="330.0" y2="331.0" stroke="#c9ccd3" stroke-width="0.8" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.45" stroke-dasharray="18 4 3 4"/>
+<polygon points="255.0,155.0 405.0,155.0 405.0,305.0 255.0,305.0" stroke="#c9ccd3" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<marker id="dimQuad" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#ff5a1f"/></marker>
+<line x1="255.0" y1="109.0" x2="255.0" y2="129.0" stroke="#8d9098" stroke-width="0.8" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.5"/>
+<line x1="405.0" y1="109.0" x2="405.0" y2="129.0" stroke="#8d9098" stroke-width="0.8" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.5"/>
+<line x1="255.0" y1="125.0" x2="405.0" y2="125.0" stroke="#ff5a1f" stroke-width="1" marker-start="url(#dimQuad)" marker-end="url(#dimQuad)"/>
+<text x="330.0" y="119.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" font-weight="700" letter-spacing="0.4" fill="#ff5a1f" text-anchor="middle">L</text>
+<text x="330.0" y="351.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="500" letter-spacing="0.4" fill="#8d9098" text-anchor="middle">BARRA QUADRADA</text>
+<line x1="425.0" y1="230.0" x2="655.0" y2="230.0" stroke="#c9ccd3" stroke-width="0.8" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.45" stroke-dasharray="18 4 3 4"/>
+<polygon points="445.0,207.0 635.0,207.0 635.0,253.0 445.0,253.0" stroke="#c9ccd3" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<marker id="dimChataL" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#8d9098"/></marker>
+<line x1="445.0" y1="163.0" x2="445.0" y2="183.0" stroke="#8d9098" stroke-width="0.8" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.5"/>
+<line x1="635.0" y1="163.0" x2="635.0" y2="183.0" stroke="#8d9098" stroke-width="0.8" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.5"/>
+<line x1="445.0" y1="179.0" x2="635.0" y2="179.0" stroke="#8d9098" stroke-width="1" marker-start="url(#dimChataL)" marker-end="url(#dimChataL)"/>
+<text x="540.0" y="173.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" font-weight="500" letter-spacing="0.4" fill="#8d9098" text-anchor="middle">L</text>
+<marker id="dimChataE" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#ff5a1f"/></marker>
+<line x1="651.0" y1="207.0" x2="665.0" y2="207.0" stroke="#8d9098" stroke-width="0.8" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.5"/>
+<line x1="651.0" y1="253.0" x2="665.0" y2="253.0" stroke="#8d9098" stroke-width="0.8" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.5"/>
+<line x1="661.0" y1="207.0" x2="661.0" y2="253.0" stroke="#ff5a1f" stroke-width="1" marker-start="url(#dimChataE)" marker-end="url(#dimChataE)"/>
+<text x="651.0" y="230.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" font-weight="700" letter-spacing="0.4" fill="#ff5a1f" text-anchor="middle" transform="rotate(-90 651.0 230.0)">e</text>
+<text x="540.0" y="299.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="500" letter-spacing="0.4" fill="#8d9098" text-anchor="middle">BARRA CHATA</text>
+<polygon points="645.0,175.0 661.0,175.0 661.0,269.0 755.0,269.0 755.0,285.0 645.0,285.0" stroke="#c9ccd3" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<marker id="dimCantoL" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#8d9098"/></marker>
+<line x1="645.0" y1="135.0" x2="645.0" y2="155.0" stroke="#8d9098" stroke-width="0.8" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.5"/>
+<line x1="755.0" y1="135.0" x2="755.0" y2="155.0" stroke="#8d9098" stroke-width="0.8" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.5"/>
+<line x1="645.0" y1="151.0" x2="755.0" y2="151.0" stroke="#8d9098" stroke-width="1" marker-start="url(#dimCantoL)" marker-end="url(#dimCantoL)"/>
+<text x="700.0" y="145.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" font-weight="500" letter-spacing="0.4" fill="#8d9098" text-anchor="middle">L</text>
+<marker id="dimCantoE" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#ff5a1f"/></marker>
+<line x1="613.0" y1="175.0" x2="627.0" y2="175.0" stroke="#8d9098" stroke-width="0.8" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.5"/>
+<line x1="613.0" y1="191.0" x2="627.0" y2="191.0" stroke="#8d9098" stroke-width="0.8" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.5"/>
+<line x1="623.0" y1="175.0" x2="623.0" y2="191.0" stroke="#ff5a1f" stroke-width="1" marker-start="url(#dimCantoE)" marker-end="url(#dimCantoE)"/>
+<text x="613.0" y="183.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" font-weight="700" letter-spacing="0.4" fill="#ff5a1f" text-anchor="middle" transform="rotate(-90 613.0 183.0)">e</text>
+<text x="700.0" y="325.0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="500" letter-spacing="0.4" fill="#8d9098" text-anchor="middle">CANTONEIRA</text>
+</svg>
