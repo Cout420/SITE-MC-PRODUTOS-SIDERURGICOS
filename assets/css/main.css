@@ -219,7 +219,8 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 .burger[aria-expanded="true"] span::before { transform: translateY(7px) rotate(45deg); }
 .burger[aria-expanded="true"] span::after { transform: translateY(-7px) rotate(-45deg); }
 @media (min-width: 640px) { .header__actions .btn--accent { display: inline-flex; } }
-@media (min-width: 1080px) { .nav { display: block; } .burger { display: none; } }
+@media (min-width: 1200px) { .nav { display: block; } .burger { display: none; } }
+@media (min-width: 1200px) and (max-width: 1319px) { .nav a, .nav button.nav__trigger { padding: 10px 10px; font-size: .9rem; } .header .container { gap: 12px; } }
 
 /* Menu mobile */
 .mobile-nav {

@@ -420,7 +420,7 @@
       $$(".quote-count").forEach(function (c) {
         c.textContent = n;
         c.classList.toggle("has-items", n > 0);
-        c.classList.remove("bump"); void c.offsetWidth; c.classList.add("bump");
+        c.classList.remove("bump"); if (n > 0) { void c.offsetWidth; c.classList.add("bump"); }
       });
       $$("[data-add-quote]").forEach(function (b) {
         var added = Quote.items().some(function (i) { return i.name === b.getAttribute("data-add-quote"); });
