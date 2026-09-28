@@ -766,3 +766,41 @@ body.menu-open { overflow: hidden; }
 .btn::after { display: none; }
 .chip, .add-quote, .tabs__list, .tabs__list button { border-radius: 8px; }
 .tabs__list { border-radius: 12px; }
+
+/* ==========================================================================
+   Desenho técnico (linguagem visual até a chegada das fotos reais)
+   Regras dos SVGs: viewBox definido, sem fill nas linhas, classes abaixo.
+   ========================================================================== */
+.drawing { position: relative; display: grid; place-items: center; overflow: hidden; background-color: var(--ink-2); color: #c9ccd3;
+  background-image: linear-gradient(rgba(255,255,255,.035) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.035) 1px, transparent 1px);
+  background-size: 24px 24px; }
+.drawing--light { background-color: var(--steel-100); color: var(--steel-700);
+  background-image: linear-gradient(rgba(10,10,11,.04) 1px, transparent 1px), linear-gradient(90deg, rgba(10,10,11,.04) 1px, transparent 1px); }
+.drawing > img, .drawing > svg { width: 100%; height: 100%; object-fit: contain; }
+.drawing__label { position: absolute; left: 14px; bottom: 12px; font: 600 .68rem/1 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; letter-spacing: .08em; text-transform: uppercase; color: var(--steel-400); }
+.card__img.drawing { aspect-ratio: 16 / 10; }
+.card--media:hover .drawing > img { transform: scale(1.04); transition: transform .8s var(--ease); }
+
+/* Traços dentro de SVG inline */
+.tl { fill: none; stroke: currentColor; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; vector-effect: non-scaling-stroke; }
+.tl--thin { stroke-width: .8; opacity: .55; }
+.tl--hidden { stroke-dasharray: 6 4; opacity: .5; }
+.tl--center { stroke-dasharray: 18 4 3 4; opacity: .45; stroke-width: .8; }
+.tl--accent { stroke: var(--accent); }
+.tl--fill { fill: currentColor; fill-opacity: .06; }
+.t-dim { font: 500 11px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; fill: currentColor; opacity: .75; letter-spacing: .04em; }
+.t-dim--accent { fill: var(--accent); opacity: 1; }
+
+/* Animação "desenhando" — use pathLength="1" em cada elemento com .draw */
+.js .draw .tl { stroke-dasharray: 1; stroke-dashoffset: 1; }
+.js .draw .tl--hidden, .js .draw .tl--center { stroke-dasharray: none; stroke-dashoffset: 0; opacity: 0; transition: opacity 1s .9s; }
+.js .draw .t-dim { opacity: 0; transition: opacity .8s var(--ease); transition-delay: calc(var(--dd, 1.2s)); }
+.js .draw.is-in .tl { transition: stroke-dashoffset 2.2s var(--ease); transition-delay: var(--dl, 0s); stroke-dashoffset: 0; }
+.js .draw.is-in .tl--hidden, .js .draw.is-in .tl--center { opacity: .5; }
+.js .draw.is-in .t-dim { opacity: .75; }
+.js .draw.is-in .t-dim--accent { opacity: 1; }
+@media (prefers-reduced-motion: reduce) { .js .draw .tl { stroke-dasharray: none; stroke-dashoffset: 0; } .js .draw .t-dim { opacity: .75; } }
+
+/* Hero com desenho técnico à direita */
+.hero__drawing { position: absolute; right: -4%; top: 50%; width: min(58vw, 820px); transform: translateY(-50%); color: #8d9098; opacity: .38; pointer-events: none; z-index: -1; }
+@media (max-width: 1023px) { .hero__drawing { opacity: .18; width: 120vw; right: -40%; } }
